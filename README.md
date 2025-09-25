@@ -1,1 +1,1 @@
-REPO
+this is my repo for vvsu study informatics
