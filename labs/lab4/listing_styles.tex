@@ -1,0 +1,101 @@
+\usepackage{fontspec}
+\setmonofont{Liberation Mono}  % вместо Consolas
+
+\usepackage{xcolor}
+\usepackage{listings}
+
+% ======================
+% YAML язык
+% ======================
+\makeatletter
+\newcommand\language@yaml{yaml}
+\expandafter\expandafter\expandafter\lstdefinelanguage
+\expandafter{\language@yaml}
+{
+  keywords={true,false,null,y,n},
+  keywordstyle=\color{darkgray},
+  basicstyle=\setmonofont{Liberation Mono}\fontsize{8}{8}\linespread{1}\selectfont,
+  sensitive=false,
+  comment=[l]{\#},
+  morecomment=[s]{/*}{*/},
+  commentstyle=\color{purple},
+  stringstyle=\color{blue},
+  moredelim=[l][\color{orange}]{\&},
+  moredelim=[l][\color{magenta}]{*},
+  moredelim=**[il][\color{red}{:}\color{blue}]{:},
+  morestring=[b]',
+  morestring=[b]",
+  literate =    {---}{{\ProcessThreeDashes}}3
+                {>}{{\textcolor{red}\textgreater}}1
+                {|}{{\textcolor{red}\textbar}}1
+                {\ -\ }{{\ -\ }}3,
+}
+\lst@AddToHook{EveryLine}{\ifx\lst@language\language@yaml\color{black}\fi}
+\makeatother
+
+% ======================
+% JSON язык
+% ======================
+\lstdefinelanguage{json}{
+    basicstyle=\fontsize{8}{8}\linespread{1}\selectfont\ttfamily,
+    sensitive=false,
+    stringstyle=\color{blue},
+    string=[s]{":\ "}{"},
+    literate=
+        *{0}{{{\color{red}0}}}{1}
+         {1}{{{\color{red}1}}}{1}
+         {2}{{{\color{red}2}}}{1}
+         {3}{{{\color{red}3}}}{1}
+         {4}{{{\color{red}4}}}{1}
+         {5}{{{\color{red}5}}}{1}
+         {6}{{{\color{red}6}}}{1}
+         {7}{{{\color{red}7}}}{1}
+         {8}{{{\color{red}8}}}{1}
+         {9}{{{\color{red}9}}}{1}
+}
+
+% ======================
+% JavaScript язык
+% ======================
+\lstdefinelanguage{JavaScript}{
+    keywords={break,case,catch,continue,debugger,default,delete,do,else,false,
+      finally,for,function,if,in,instanceof,new,null,return,switch,this,throw,true,
+      try,typeof,var,let,const,while,with,await,async},
+    keywordstyle=\color{blue}\bfseries,
+    ndkeywords={class,export,import},
+    ndkeywordstyle=\color{darkgray}\bfseries,
+    identifierstyle=\color{black},
+    sensitive=true,
+    comment=[l]{//},
+    morecomment=[s]{/*}{*/},
+    commentstyle=\color{purple}\ttfamily,
+    stringstyle=\color{orange}\ttfamily,
+    morestring=[b]',
+    morestring=[b]",
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    showstringspaces=false,
+}
+
+% ======================
+% Общий стиль для листингов
+% ======================
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{codestylelst}{
+    backgroundcolor=\color{backcolour},
+    numberstyle=\color{codegray}\ttfamily,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+
+% Применяем стиль ко всем листингам по умолчанию
+\lstset{style=codestylelst}
