@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.10.31)  31 OCT 2025 10:36
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.10.31)  7 NOV 2025 09:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1407,12 +1407,12 @@ Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 130.
 
 (./code/task1.js)
-Overfull \hbox (3.57178pt too wide) in paragraph at lines 136--136
+Overfull \hbox (3.57178pt too wide) in paragraph at lines 137--137
 []\TU/Arial(0)/m/n/13 1.2 [] 
  []
 
 (./code/task2.js)
-Overfull \hbox (3.57178pt too wide) in paragraph at lines 150--150
+Overfull \hbox (3.57178pt too wide) in paragraph at lines 152--152
 []\TU/Arial(0)/m/n/13 1.3 [] 
  []
 
@@ -1420,12 +1420,12 @@ Overfull \hbox (3.57178pt too wide) in paragraph at lines 150--150
 
 
 ]
-Overfull \hbox (3.57178pt too wide) in paragraph at lines 164--164
+Overfull \hbox (3.57178pt too wide) in paragraph at lines 165--165
 []\TU/Arial(0)/m/n/13 1.4 [] 
  []
 
 (./code/task4.js)
-Overfull \hbox (3.57178pt too wide) in paragraph at lines 175--175
+Overfull \hbox (3.57178pt too wide) in paragraph at lines 179--179
 []\TU/Arial(0)/m/n/13 1.5 [] 
  []
 
@@ -1440,24 +1440,24 @@ Overfull \hbox (3.57178pt too wide) in paragraph at lines 205--205
  []
 
 (./code/task7.js) [5.7]
-Overfull \hbox (3.57178pt too wide) in paragraph at lines 218--218
+Overfull \hbox (3.57178pt too wide) in paragraph at lines 219--219
 []\TU/Arial(0)/m/n/13 1.8 [] 
  []
 
 (./code/task8.js)
-Overfull \hbox (3.57178pt too wide) in paragraph at lines 231--231
+Overfull \hbox (3.57178pt too wide) in paragraph at lines 234--234
 []\TU/Arial(0)/m/n/13 1.9 [] 
  []
 
 (./code/task9.js)
-Overfull \hbox (4.80176pt too wide) in paragraph at lines 242--242
+Overfull \hbox (4.80176pt too wide) in paragraph at lines 247--247
 []\TU/Arial(0)/m/n/13 1.10 [] 
  []
 
 (./code/task10.js) [6.8]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 257.
+(hyperref)                removing `\\' on input line 263.
 
 (/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-utf32be.def
 File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
@@ -1466,6 +1466,9 @@ File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 ) [7.9]
 (./report.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'report.run.xml'.
